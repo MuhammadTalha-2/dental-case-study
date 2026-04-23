@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm install *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://ui-avatars.com/api/?name=Dr+Smith&background=random\")",
+      "Bash(curl -s -I \"https://ui-avatars.com/api/?name=Dr+Smith&background=random\")"
     ]
   }
 }

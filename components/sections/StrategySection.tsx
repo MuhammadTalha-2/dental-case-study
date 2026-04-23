@@ -1,4 +1,5 @@
 import PhaseCard from "../ui/PhaseCard";
+import Reveal from "../ui/Reveal";
 
 const PHASES = [
   {
@@ -29,20 +30,23 @@ const PHASES = [
 
 export default function StrategySection() {
   return (
-    <section className="py-24 bg-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+    <section className="py-24 bg-slate-100 relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent" />
+
+      <Reveal className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16 relative">
         <h2 className="text-4xl font-bold mb-4">The 4-Phase Integrated Strategy</h2>
         <p className="text-slate-600 max-w-2xl mx-auto">
           We stopped treating channels as silos and started treating marketing as
           a compounding system.
         </p>
-      </div>
+      </Reveal>
 
-      <div className="max-w-5xl mx-auto px-4 grid gap-8">
+      <Reveal stagger className="max-w-5xl mx-auto px-4 grid gap-8 relative">
         {PHASES.map((phase) => (
           <PhaseCard key={phase.number} {...phase} />
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 }
