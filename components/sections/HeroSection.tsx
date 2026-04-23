@@ -1,4 +1,4 @@
-import { Tooth } from "@phosphor-icons/react/dist/ssr";
+import { ToothIcon } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -53,7 +53,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="absolute top-0 right-0 -mr-20 mt-10 opacity-10 rotate-12 animate-float-slow">
-        <Tooth size={400} weight="fill" className="text-blue-600" />
+        <ToothIcon size={400} weight="fill" className="text-blue-600" />
       </div>
     </section>
   );

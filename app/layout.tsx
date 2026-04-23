@@ -15,6 +15,16 @@ export const metadata: Metadata = {
   icons: {
     icon: "/cropped-icon.png",
   },
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +39,7 @@ export default function RootLayout({
       className={`${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <ScrollProgress />
+        {/*<ScrollProgress />*/}
         <Header />
         <main>{children}</main>
       </body>
