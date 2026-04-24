@@ -8,8 +8,8 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full bg-blue-200/30 blur-3xl" />
       <div className="pointer-events-none absolute top-1/3 -right-24 h-[28rem] w-[28rem] rounded-full bg-indigo-200/30 blur-3xl" />
 
-      <div className="pointer-events-none absolute top-0 right-0 -mr-20 mt-10 opacity-10 rotate-12 animate-float-slow">
-        <ToothIcon size={400} weight="fill" className="text-blue-600" />
+      <div className="pointer-events-none absolute top-1/4 -left-28 opacity-[0.08] -rotate-12 animate-float-slow z-0">
+        <ToothIcon size={380} weight="fill" className="text-blue-600" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
